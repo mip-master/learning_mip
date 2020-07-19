@@ -1,4 +1,4 @@
-# MIP
+# MIP as decision-making technology
 MIP stands for Mixed-integer Programming, which is a fantastic 
 technology for modeling and solving decision-making problem in a 
 variety of domains such as supply chain and logistics, scheduling,
