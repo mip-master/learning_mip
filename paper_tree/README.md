@@ -14,7 +14,7 @@ The flow chart gives the big picture of the first
 problem to be solved (more complex versions to come 
 which will involve time periods and inventory).
 
-![alt text](https://github.com/[mip-master]/[learning_mip]/blob/[master]/flowchart.png?raw=true)
+![alt text](https://github.com/mip-master/learning_mip/blob/master/paper_tree/flowchart.png?raw=true)
 
 Specifically, harvested trees are preprocessed in 
 the land field. Larger-diameter logs yield sawtimber 
