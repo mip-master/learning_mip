@@ -1,0 +1,13 @@
+﻿Location ID,Material ID,Product ID,Location,Material,Product,Output Ratio
+2,1,3,Pulpwood Mill,Pulpwood,Chips,0.85
+2,1,8,Pulpwood Mill,Pulpwood,Bark,0.15
+3,2,4,Sawmill,Sawtimber,Dust,0.10
+3,2,5,Sawmill,Sawtimber,Shavings,0.15
+3,2,6,Sawmill,Sawtimber,Lumber,0.70
+3,2,8,Sawmill,Sawtimber,Bark,0.05
+4,3,7,Linerboard Mill,Chips,Paper,0.25
+4,3,8,Linerboard Mill,Chips,Bark,0.75
+4,4,7,Linerboard Mill,Dust,Paper,0.55
+4,4,8,Linerboard Mill,Dust,Bark,0.45
+4,5,7,Linerboard Mill,Shavings,Paper,0.40
+4,5,8,Linerboard Mill,Shavings,Bark,0.60
