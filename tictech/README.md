@@ -23,24 +23,47 @@ The goal is to pick the technology with the highest
 score (which, of course, is app).
 
 ## Formulation
+A typical formulation has three main components:
+*	Decision variables
+*	Constraints
+*	Objective function
+
 **Decision variables**
-* x_1	equals 1 if consulting is chosen, 0 otherwise
-* x_2	equals 1 if off-the-shelf software is chosen, 0 otherwise
-* x_3	equals 1 if purpose-built apps are chosen, 0 otherwise
+
+While there might be multiples ways to define the decision 
+variables, choosing a good set of variables is crucial. 
+Because, once the variables are defined, constraints and 
+the objective are defined as functions of it.
+For this problem, we defined three binary variables.
+
+>*Decision variables*
+>* `x_1`	equals 1 if consulting is chosen, 0 otherwise
+>* `x_2`	equals 1 if off-the-shelf software is chosen, 0 otherwise
+>* `x_3`	equals 1 if purpose-built apps are chosen, 0 otherwise
 
 **Constraints**
 
-Exactly one technology must be chosen:
+In this use case, there is only one requirement: one, 
+and only one, technology must be chosen.
+We can formulated this requirement using a single constraint.
 
-x_1+x_2+x_3=1.
+>Constraints – Exactly one technology:<br>
+><pre>x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = 1</pre>.
 
 **Objective**
 
-max 12x_1 + 17x_2 + 25x_3
+The objective of this problem is to maximize the score, which Mr. Mip formulated as following.
+
+>Objective:<br>
+><pre>max 12x<sub>1</sub> + 17x<sub>2</sub> + 25x<sub>3</sub></pre>
 
 **Final formulation**
-<pre>
-max 12x_1 + 17x_2 + 25x_3
-s.t.    x_1 + x_2 + x_3 = 1
-        x_1, x_2, x_3 in {0,1}.
-</pre>
+
+Putting all together, We arrive at the following formulation.
+
+>Final formulation:
+><pre>
+>max 12x<sub>1</sub> + 17x<sub>2</sub> + 25x<sub>3</sub>
+>s.t.    x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = 1
+>        x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub> in {0,1}.
+></pre>
