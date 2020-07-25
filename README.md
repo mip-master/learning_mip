@@ -15,7 +15,6 @@ beginning.
 One of the primary goal of Mip Master is to make the MIP
 technology accessible beyond the operations research community,
 and especially to the data science community.
-
 With that in mind, the use cases we share are designed to be
 as didactic as they can be (without compromising performance)
 and all of then are implemented in Python.
@@ -53,7 +52,31 @@ We recommend to explore the use cases following the
 order in this list, especially if you are not familiar with
 MIP yet.
 
-1. TicTech - 
+1.  **TicTech** - Illustrates how to implement a 
+    *very simple* optimization model.<br>
+    Concepts:
+    - The three steps to solve a problem
+    - The three components of a formulation
+    - Binary decision variables
+    - Calling a MIP solver
+
+2.  **Ukulele-la♬-la♫** - A simplified version of a practical
+    fulfillment problem.<br>
+    Concepts:
+    - Integer decision variables
+    - Summation notation
+    - If-then constraints
+    - Big-M constraints
+    - Complement of a binary variable
+    - LP files
+    
+3.  **Paper Tree** - A simplified version of a practical 
+    production planning.<br>
+    Concepts:
+    - Network flow problem
+    - Conservation of flow constraint
+    - Optimization data model
+
 
 ## The MIP Technology
 
@@ -66,7 +89,7 @@ which includes binary variables as a special case.
 * “Mixed” is to indicate a mix of continuous and 
 integer decision variables.
 
-Putting all together,<br> 
+Putting all together,
 **“MIP is an optimization problem that involves a mix 
 of continuous and integer/binary decision variables.”**
 
@@ -75,7 +98,6 @@ I will provide more background as we move along.
 For now, all you need to know is that an optimization 
 problem consists of minimizing or maximizing an objective 
 function subject to a set of constraints.
-
 The objective and constraints are functions of the 
 decision variables.
 
@@ -83,10 +105,8 @@ Example of decision variables include the number of
 products to manufacture in each machine in each day, 
 and whether to fulfil orders from Facility A or from 
 Facility B.
-
 Examples of objectives include minimizing waste and 
 maximizing profit.
-
 Example of constraints include resource capacity and 
 policies such as maximum number of daily working hours.
 
@@ -193,10 +213,10 @@ To answers this question, let’s have a look at the history
 of MIP theory and MIP solvers.
 
 First, MIP is not a new technology. Here is quote from the 
-book
-[50 Years of Integer Programming 1958-2008, From the Early 
-Years to the State-of-the-Art](
-https://www.springer.com/gp/book/9783540682745)<br>
+[book](
+https://www.springer.com/gp/book/9783540682745)
+*50 Years of Integer Programming 1958-2008, From the Early 
+Years to the State-of-the-Art*<br>
 >“In 1958, Ralph E. Gomory transformed the field of integer 
 programming when he published a short paper that described 
 his cutting-plane algorithm for pure integer programs and 
@@ -206,8 +226,8 @@ algorithm for integer programming.”
 MIP tractability used to be a concern in the beginning. 
 However, there has been tremendous progress around 
 solving MIP. Here is a quote from a recent [paper](
-http://www.mit.edu/~dbertsim/papers/Machine Learning under a Modern Optimization Lens/Logistic Regression-From Art to Science.pdf) by 
-Dimitris Bertsimas and Angela King:<br>
+http://www.mit.edu/~dbertsim/papers/Machine%20Learning%20under%20a%20Modern%20Optimization%20Lens/Logistic%20Regression-From%20Art%20to%20Science.pdf) 
+by Dimitris Bertsimas and Angela King:<br>
 >“In the period 1991–2015, algorithmic advances in 
 Mixed-Integer Linear Optimization (MILO) coupled with 
 hardware improvements have resulted in an astonishing 
@@ -225,8 +245,7 @@ across industries, including [airlines crew scheduling](
 https://www.isye.gatech.edu/news/airline-optimization-isye), 
 [sport scheduling](
 http://www.sports-scheduling.com/in-the-news.html), 
-and the whole field of supply chain.
-
+and the whole field of supply chain. 
 However, initially, only those developing the MIP theory 
 were able to use this technology for solving practical problems.
 Deep understanding of the theoretical and computational 
@@ -238,7 +257,6 @@ of literature on how to model and solve MIP increased.
 Around the same time, the commercial MIP solvers [Xpress](
 https://en.wikipedia.org/wiki/FICO_Xpress) and CPLEX began 
 to gain popularity.
-
 Few years later, in early 2000’s, two of the first open 
 source MIP solvers, [GLPK](
 https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit) 
@@ -263,14 +281,15 @@ Many Python interface for optimization packages,
 such as [Pyomo](https://en.wikipedia.org/wiki/Pyomo), 
 [Mip](https://pypi.org/project/mip/), and 
 [PuLP](https://coin-or.github.io/pulp/), emerged.
-
 Gurobi, in particular, has put tremendous effort in making 
 its optimization package easily accessible via [gurobipy](
 https://www.gurobi.com/documentation/9.0/quickstart_mac/py_python_interface.html), 
 the Gurobi-Python interface, along with comprehensive, 
 well-structured documentation. CPLEX also took a similar path.
 
-Now, any data scientist can easily leverage MIP technology 
+Now, any data scientist (and other analytics 
+professionals) can much more easily leverage 
+MIP technology 
 for solving all sort of combinatorial problems.
 However, the myth that optimization is only for Operation 
 Researchers still remains around.
@@ -290,7 +309,6 @@ Perhaps the most classic example is demand data. Data
 scientists use forecasting to predict demand and then 
 the output of the forecasting algorithm (point forecast) 
 becomes input of the MIP model.
-
 In this example, prediction and optimization are done in 
 disconnected silos. we claim that this disconnection has 
 created a gap between what we have been doing and what 
@@ -320,11 +338,10 @@ https://www.youtube.com/watch?v=RDOsP-gUWgQ).
 
 This is a tricky question. And the answer highly depends 
 on the level of expertise you want to achieve.
-
 Compared to Machine Learning, it might be fair to say that:
-1)	MIP is harder to grasp than basic regression and 
+*	MIP is harder to grasp than basic regression and 
 classification techniques.
-2)	Deep learning and reinforcement learning, on the other 
+*	Deep learning and reinforcement learning, on the other 
 hand, are more difficult to learn than MIP.
 
 Notice that all these Machine Learning techniques are 
@@ -368,7 +385,6 @@ This includes being able to:
      
 Level 3 is the one that requires most practice because 
 there is not a single recipe for MIP modeling.
-
 Level 4 is the most fun for most people. That’s when 
 you hit the run button and follow the optimization 
 progress by watching the solver log, like this one:
