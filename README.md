@@ -1,4 +1,4 @@
-# Learning MIP
+# Introduction
 MIP stands for Mixed-integer Programming. 
 This is an important filed of mathematical optimization 
 and a fantastic technology for modeling and solving 
@@ -41,8 +41,7 @@ We also hope that you will always come back to learn more
 and to use MIP with confidence, starting from your 
 next project!
 
-## Use Cases
-
+# Use Cases
 If you want to jump straight to the use cases,
 here is a list of the ones currently available.
 Keep in mind that we are constantly adding new use cases
@@ -84,10 +83,8 @@ MIP yet.
     - Optimization data model
 
 
-## The MIP Technology
-
-### What is MIP?
-
+# The MIP Technology
+## What is MIP?
 MIP stands for Mixed-Integer Programming.
 * “Programming” is synonyms for “Optimization”.
 * “Integer” is for integer decision variables, 
@@ -149,8 +146,7 @@ sometimes called a feasibility problem (the Sudoku puzzle
 is an example).
 
 
-### Why MIP?
-
+## Why MIP?
 MIP is a powerful decision-making technology. 
 And here are four features of MIP to support this claim.
 1.	Representativeness
@@ -213,8 +209,7 @@ that tells you how close you may be from the best
 possible solution.
 
 
-### Why MIP now?
- 
+## Why MIP now? 
 To answers this question, let’s have a look at the history 
 of MIP theory and MIP solvers.
 
@@ -301,8 +296,7 @@ However, the myth that optimization is only for Operation
 Researchers still remains around.
 
 
-### MIP for Data Scientists
-
+## MIP for Data Scientists
 Apart from the fact that MIP is a 
 powerful technology on its own, and it’s accessible even 
 by those outside of the Operations Research community, 
@@ -340,8 +334,7 @@ This quote was taken from this two-minutes [video](
 https://www.youtube.com/watch?v=RDOsP-gUWgQ).
 
 
-### Is it hard to learn MIP?
-
+## Is it hard to learn MIP?
 This is a tricky question. And the answer highly depends 
 on the level of expertise you want to achieve.
 Compared to Machine Learning, it might be fair to say that:
@@ -424,7 +417,7 @@ those interested on that. But we mostly focus only on
 the theory that is needed to make you a thoughtful practitioner.
 
 
-### Summary
+# Summary
 Well done!
 So far, you have already learned that:
 *	MIP is a very powerful optimization-based technology 
@@ -445,23 +438,9 @@ So far, you have already learned that:
     burning your time with unnecessary optimization theory.
 
 ## Are you ready?!
-
 It’s time to see practical examples of how to model 
 and solve optimization problems.
 We will catch up with the theory as we move along. 
 I’m sure that the whole experience will be much more 
 enjoyable this way, opposed to waging though abstract 
 theory first and only then doing the fun stuff.
-
-## Meet Mr. Mip
-Mr. Mip is our role model for learning and applying 
-the MIP technology.
-He’s a consultant who is expert in using mathematical 
-optimization programming for solving decision-making 
-problems. You will learn by observing Mr. Mip in action
-in each one of the use cases.
-
-To take the most from this experience, you should 
-focus on understanding how Mr. Mip thinks. 
-He’s very systematic, so it will be easy to recognize 
-his thinking pattern.
