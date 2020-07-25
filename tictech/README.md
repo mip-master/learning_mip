@@ -1,6 +1,17 @@
 # TicTech
+
 This is the directory for the TicTech use case.
 
+It this is your first time visiting Learning MIP 
+at Mip Master, you may want to start from the 
+[homepage](https://mip-master.github.io/learning_mip/).
+
+## Concepts covered
+- The three steps to solve a problem
+- The three components of a formulation
+- Modeling with binary decision variables
+- Calling a MIP solver
+    
 ## Problem statement
 The purpose of this use case is to illustrate
 how to implement a **very simple** optimization
@@ -28,7 +39,7 @@ A typical formulation has three main components:
 *	Constraints
 *	Objective function
 
-**Decision variables**
+#### Decision variables
 
 While there might be multiples ways to define the decision 
 variables, choosing a good set of variables is crucial. 
@@ -38,10 +49,10 @@ For this problem, we defined three binary variables.
 
 >*Decision variables*
 >* `x_1`	equals 1 if consulting is chosen, 0 otherwise
->* `x_2`	equals 1 if off-the-shelf software is chosen, 0 otherwise
->* `x_3`	equals 1 if purpose-built apps are chosen, 0 otherwise
+>* $x_2$	equals 1 if off-the-shelf software is chosen, 0 otherwise
+>* \\(x_3\\)	equals 1 if purpose-built apps are chosen, 0 otherwise
 
-**Constraints**
+#### Constraints
 
 In this use case, there is only one requirement: one, 
 and only one, technology must be chosen.
@@ -50,14 +61,14 @@ We can formulated this requirement using a single constraint.
 >Constraints – Exactly one technology:<br>
 ><pre>x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = 1</pre>.
 
-**Objective**
+#### Objective
 
 The objective of this problem is to maximize the score, which Mr. Mip formulated as following.
 
 >Objective:<br>
 ><pre>max 12x<sub>1</sub> + 17x<sub>2</sub> + 25x<sub>3</sub></pre>
 
-**Final formulation**
+#### Final formulation
 
 Putting all together, We arrive at the following formulation.
 

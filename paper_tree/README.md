@@ -1,6 +1,10 @@
 # Paper Tree
 This is the directory for the Paper Tree use case.
 
+It this is your first time visiting Learning MIP 
+at Mip Master, you may want to start from the 
+[homepage](https://mip-master.github.io/learning_mip/).
+
 ## Problem statement
 Paper Tree is well-known for producing paper and other 
 materials, such as lumber, wood ships, and pulpwood, 

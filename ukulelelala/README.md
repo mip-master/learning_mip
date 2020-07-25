@@ -2,6 +2,19 @@
 This is the directory for the Ukulelelala (read Ukulele-la♬-la♫) 
 use case.
 
+It this is your first time visiting Learning MIP 
+at Mip Master, you may want to start from the 
+[homepage](https://mip-master.github.io/learning_mip/).
+
+## Concepts covered
+- Modeling with integer decision variables
+- Summation notation
+- If-then constraints
+- Big-M constraints
+- Complement of a binary variable
+- LP files
+
+
 ## Problem statement
 Ted runs a business on the music industry, a ukulele factory. 
 His brand, Ukulelelala, is becoming a big success because 
@@ -12,7 +25,6 @@ Every week, Ted ships all his production to seven major
 partner retailers. However, recently, the demand has been 
 increasing tremendously to the point that Ted has not 
 been able to keep up with production. 
-
 Since Ted is not allowed to increase prices due to 
 contractual reasons, every week he must decide how much 
 to fulfil of each order he receives.
@@ -48,11 +60,58 @@ placed an order for that week.
 Now, Ted needs to decide which retailer to ship to, and for
 each retailer that he decide to serve that week, how
 many ukuleles to ship.
-
 The objective is to maximize profit, i.e., revenue 
 minus penalty.
 
-An optimal solution is given in the Shipped Qty. column
+An optimal solution is given in the *Shipped Qty.* column
 of the table above.
 
+## Formulation
+Let’s go through the three main steps that it typically 
+takes to write a formulation.
 
+#### Decision variables
+The trick to define decision variables is to think about 
+the unknowns of the problem.
+
+For example, the number of ukuleles available for shipment 
+is known, 650 in this case.
+Likewise, the price by which he will sell to each retailer 
+is also known, it’s given in the Wholesale Unit Price column.
+
+Which retailers should Ted ship to? That’s unknown, 
+it needs to be decided.
+Once Ted decide to ship to a retailer, how many units 
+should he ship? This is also to be determined.
+Following this reasoning, we defined two set of decision 
+variables.
+
+>Decision variables:
+>*  `x_i`	equal `1` if Ted ships to retailer `i`, `0` otherwise, 
+    for all `i = R01, R02, …, R07`.
+>*  `y_i`	the number of ukuleles shipped to retailer `i`, 
+    for all `i = R01, R02, …, R07`.
+
+Notice that `x` are binary variables (they can only take 
+0-1 values) while `y` are integer variables. It wouldn’t 
+make sense to define `y` as continuous since it doesn’t 
+make sense to ship `50.3` ukuleles, for instance.
+
+To simplify notation, let’s write `x_1, x_2, …, x_7` instead 
+of `x_R01, x_R02, …, x_R07` when writing constraints and the 
+objective function. Similarly, let’s write `y_1, y_2, …, y_7` 
+instead of `y_R01, y_R02, …, y_R07`.
+
+#### Constraints
+Ideally, Ted would meet all order in full—because the more 
+units he ships, the more profit he makes (we will model this 
+with the objective function). This means that the optimization 
+should try to increase each variable `y_i` as much as possible.
+
+However, Ted doesn’t have enough supply. Therefore, we need 
+to model the fact that the total shipped quantity cannot 
+exceed `650` units.
+>Constraints – Max availability:
+><pre>y_1 + y_2 + y_3 + y_4 + y_5 + y_6 + y_7 ≤ 650.</pre>
+Using summation notation, this is the same as the following:
+∑_(i=1)^7y_i ≤650.
