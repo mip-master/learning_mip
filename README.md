@@ -370,17 +370,17 @@ as gradient descent.
 Going back to the main question, there are several levels 
 of expertise that one can achieve in optimization.
 This includes being able to:
-1)	**Admit** that a problem is an optimization problem 
+1.	**Admit** that a problem is an optimization problem 
     when an expert tells you so.
-2)	**Recognize** when a problem can be formulated as 
+2.	**Recognize** when a problem can be formulated as 
     an optimization problem.
-3)	**Model/Formulate** business problems as optimization 
+3.	**Model/Formulate** business problems as optimization 
     problems.
-4)	**Solve** optimization problems using existing 
+4.	**Solve** optimization problems using existing 
     solvers and algorithms.
-5)	**Design** customized algorithms for solving 
+5.	**Design** customized algorithms for solving 
     challenging optimization problems.
-6)	**Develop** theory for solving whole classes of 
+6.	**Develop** theory for solving whole classes of 
     optimization problems.
      
 Level 3 is the one that requires most practice because 
@@ -447,7 +447,7 @@ I’m sure that the whole experience will be much more
 enjoyable this way, opposed to waging though abstract 
 theory first and only then doing the fun stuff.
 
-### Meet Mr. Mip
+## Meet Mr. Mip
 Mr. Mip is our role model for learning and applying 
 the MIP technology.
 He’s a consultant who is expert in using mathematical 
