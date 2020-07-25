@@ -52,7 +52,9 @@ We recommend to explore the use cases following the
 order in this list, especially if you are not familiar with
 MIP yet.
 
-1.  **TicTech** - Illustrates how to implement a 
+1.  **[TicTech](
+    https://github.com/mip-master/learning_mip/tree/master/tictech)** - 
+    Illustrates how to implement a 
     *very simple* optimization model.<br>
     Concepts:
     - The three steps to solve a problem
@@ -60,7 +62,9 @@ MIP yet.
     - Binary decision variables
     - Calling a MIP solver
 
-2.  **Ukulele-la♬-la♫** - A simplified version of a practical
+2.  **[Ukulele-la♬-la♫](
+    https://github.com/mip-master/learning_mip/tree/master/ukulelelala)** - 
+    A simplified version of a practical
     fulfillment problem.<br>
     Concepts:
     - Integer decision variables
@@ -70,7 +74,9 @@ MIP yet.
     - Complement of a binary variable
     - LP files
     
-3.  **Paper Tree** - A simplified version of a practical 
+3.  **[Paper Tree](
+    https://github.com/mip-master/learning_mip/tree/master/paper_tree)** - 
+    A simplified version of a practical 
     production planning.<br>
     Concepts:
     - Network flow problem
@@ -115,14 +121,14 @@ all acceptable (feasible) solutions to the problem and
 identify one that has the best objective value. 
 
 There are three major steps to that end:
-1)	**Definition**: Understanding the business problem 
+1.	**Definition**: Understanding the business problem 
 in detail, which includes identifying the main goals, 
 data, and requirements.
-2)	**Modeling**: Building a precise representation 
+2.	**Modeling**: Building a precise representation 
 of the problem—In our case, first a mathematical 
 formulation and then an optimization model that the 
 computer can understand.
-3)	**Solution**: Searching for the best solution—in 
+3.	**Solution**: Searching for the best solution—in 
 our case using a MIP solver.
 
 Few more facts:
