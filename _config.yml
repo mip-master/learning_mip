@@ -1,2 +1,12 @@
 theme: jekyll-theme-leap-day
-title: Leraning MIP
+title: Learning MIP
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-border-col: "#EAEAEA"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
