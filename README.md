@@ -1,4 +1,7 @@
 # Introduction
+
+//(x_1//)
+
 MIP stands for Mixed-integer Programming. 
 This is an important filed of mathematical optimization 
 and a fantastic technology for modeling and solving 
