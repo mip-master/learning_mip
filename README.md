@@ -1,7 +1,7 @@
 # Introduction
 
-MIP stands for Mixed-integer Programming. 
-This is an important filed of mathematical optimization 
+MIP stands for *Mixed-integer Programming*. 
+It's an important filed of mathematical optimization 
 and a fantastic technology for modeling and solving 
 decision-making problem in a variety of domains such 
 as supply chain, logistics, scheduling,
@@ -9,7 +9,8 @@ electric power generation, and so many more.
 
 Here, you will find lots of practical, hands-on examples to 
 learn and apply MIP to solve real-world problems. Many years of
-industry experience have been combined to develop this material
+academic and
+industry experience are being combined to develop this material
 aiming to help you to adopt the best practices right from the 
 beginning.
 
@@ -18,7 +19,7 @@ technology accessible beyond the operations research community,
 and especially to the data science community.
 With that in mind, the use cases we share are designed to be
 as didactic as they can be (without compromising performance)
-and all of then are implemented in Python.
+and all of them are implemented in Python.
 
 After covering this material, you will be able to:
 1.	Identify when a problem can be modeled as a MIP
@@ -47,7 +48,6 @@ If you want to jump straight to the use cases,
 here is a list of the ones currently available.
 Keep in mind that we are constantly adding new use cases
 to the list.
-
 We recommend to explore the use cases following the
 order in this list, especially if you are not familiar with
 MIP yet.
@@ -59,8 +59,8 @@ MIP yet.
     *Author: Aster Santana, Jul 2020*
     
     Concepts:
-    - The three steps to solve a problem
-    - The three components of a formulation
+    - The three steps to solve a business problem
+    - The three components of a mathematical formulation
     - Modeling with binary decision variables
     - Calling a MIP solver
 
@@ -92,7 +92,7 @@ MIP yet.
 Would you like to contribute with an use case too?!
 We provide [templates](
 https://github.com/mip-master/learning_mip/tree/master/templates
-) and will be happy to help you!
+) and would be happy to helping you to build your use case!
 
 # The MIP Technology
 Let's dive a little deeper into the MIP technology.
@@ -110,21 +110,21 @@ Putting all together,
 of continuous and integer/binary decision variables.”**
 
 If you are not familiar with optimization, no worries! 
-We will provide more background along with use cases.
+We will provide more background throughout the use cases.
 For now, all you need to know is that an optimization 
 problem consists of minimizing or maximizing an objective 
-function subject to a set of constraints.
-The objective and constraints are functions of the 
+function subject to a set of constraints, and the 
+objective and constraints are functions of 
 decision variables.
 
-Example of decision variables include the number of 
-products to manufacture in each machine in each day, 
-and whether to fulfil orders from Facility A or from 
+A decision variable could be the number of 
+products to manufacture in given machine,
+or whether to fulfil orders from Facility A or from 
 Facility B.
 Examples of objectives include minimizing waste and 
 maximizing profit.
-Example of constraints include resource capacity and 
-policies such as maximum number of daily working hours.
+A constraint could be a resource capacity such as 
+maximum number of daily working hours.
 
 At the end of the day, we want to define the set of 
 all acceptable (feasible) solutions to the problem and 
@@ -141,95 +141,94 @@ computer can understand.
 3.	**Solution**: Searching for the best solution—in 
 our case using a MIP solver.
 
+You will be surprised to see the variety of practical
+problems that you can solve with what you will learn here!
+
 Few more facts:
 *	MIP is an extension of Linear Programming (LP), 
-    which is the most basic class of optimization problems. 
-    We will talk more about it later.
+    which is the most basic class of optimization problems.
 *	Sometimes we use the acronym MILP instead of MIP to 
-    emphasize that the problem is “Linear”, opposed to 
-    non-linear. More to come on that as well.
+    emphasize that the problem is *linear*, opposed to 
+    *non-linear*.
 *	Some people prefer the word “optimization” instead 
     of “programming”, in which case the acronym becomes MIO 
     or MILO.
-*	Not every MIP is an optimization problem, often we 
-    are not interested in minimizing or maximizing anything. 
-    We just want to find a feasible solution, i.e., a solution 
-    that meet all requirements simultaneously. This is 
-    sometimes called a feasibility problem (the Sudoku puzzle 
-    is an example).
+*	Not every MIP is an optimization problem, in the sense that
+    we are not always interested in minimizing/maximizing 
+    something. In some cases, we just want to find a feasible 
+    solution, i.e., a solution 
+    that meet all requirements simultaneously. Puzzles, such as 
+    Sudoku, are good examples of it.
 *   There are many classes of optimization problems. 
-    For example, classes can be defined based on modeling
-    assumptions such as deterministic or stochastic, type of 
-    decision variables present in the model 
-    (continuous, integer, or both), or
+    Classes can be defined, for example, based on modeling
+    assumptions, such as deterministic or stochastic; type of 
+    decision variables present in the model, such as
+    continuous, integer, or both; or
     type of expressions defining the objective and
-    constraints (linear, convex, non-convex).
-    We will not expand further on that at this point.
-    But if you are curious, we will be dealing mostly
+    constraints, such as linear, convex, non-convex.
+    We will be dealing mostly
     with deterministic mixed-integer linear programs.
 
 
 ## Why MIP?
 MIP is a powerful decision-making technology. 
-And here are four features of MIP to support this claim.
-1.	Representativeness
-2.	Robustness
-3.	Tractability
-4.	Optimality guarantee
+And here are four features of MIP to support this claim: 
+representativeness, robustness, tractability, optimality 
+guarantee.
 
-Let me break them down for you.
-1.	**Representativeness:**
+*	**Representativeness:**
 The first step in solving and business problem using 
 optimization is to write a precise mathematical formulation 
-to the problem. This process is also called modeling. 
-We will use this terminology very often.
+to the problem. This process is also called modeling—we 
+will use this terminology very often.
 Representativeness means that a broad class of 
-business problems can be modeled as a MIP.
-2.	**Robustness:**
+business problems can be modeled using MIP.
+*	**Robustness:**
 Modeling, whether using MIP and any other technology, 
 is not a trivial task.
 And in the dynamic environment we live nowadays, 
 business problems tend to change quite often.
-As you will see in the use cases, MIP is very adaptable.
-And that’s what robustness means. To the most part, 
+As you will see in the use cases, MIP is very adaptable,
+that’s what robustness means. To the most part, 
 it is easy to extend or modify a MIP model to address 
 new business requirements.
-3.	**Tractability:**
+*	**Tractability:**
 Modeling the business problem is only the first step. 
 Eventually we need to solve the model.
 As you might guess, the larger the number of variables 
-and constraints, the harder to solve the model.
-The good news is that practical models with millions 
+and constraints, the harder it is to solve the model.
+The good news is that practical models with *millions* 
 of variables and constraints can often be solved efficiently.
-Another good news is that the MIP solver will do the 
-hard work of solving the problem for us.
-4.	**Optimality guarantee:**
+Another good news is that the MIP solver will do all the 
+hard work of solving the problem for you!
+*	**Optimality guarantee:**
 What does it mean to solve an optimization problem?
 Usually it means finding THE best feasible solution 
-with respect to an objective.
+with respect to an objective. It's easier to explain
+with an example.
 Suppose you use the gradient descent algorithm to fit 
-a non-linear regression model to a data set. How do you 
+a *non-linear* regression model to a data set. How do you 
 know that the solution you found gives you the best fit?
 The solution you get, depends on the starting point you 
 choose.
 So, unless your non-linear model has a special structure, 
-you will never know for sure if the solution you got is 
-the best you can possibly have.
+you will never know for sure whether the solution you got is 
+the best you can possibly have or not.
 Solutions from a MIP solver, on the other hand, comes 
-with an optimality gap (also called MIP gap or duality gap).
+with an *optimality gap*—also called *MIP gap* or *duality gap*.
 If the gap is zero, you know that no solution with 
 better objective exists.
-If the gap is not zero, you still have an upper bound on 
-how far your solution is from optimality.
+If the gap is greater than zero, you still have an upper bound on 
+"how far" your solution is from optimality.
 
 To recap, MIP is great because:
 *	It’s applicable to a broad class or problems.
 *	It’s very flexible and adaptable.
 *	It can handle very large problems, with possibly 
-millions of variables.
-*	Finally, the solution comes with an optimality gap 
-that tells you how close you may be from the best 
-possible solution.
+    millions of variables and constraints.
+*	The solution comes with an optimality gap 
+    that tells you how close you may be from the best 
+    possible solution.
 
 
 ## Why MIP now? 
@@ -278,8 +277,9 @@ https://www.isye.gatech.edu/news/airline-optimization-isye
 http://www.sports-scheduling.com/in-the-news.html
 ), 
 and the whole field of supply chain. 
-However, initially, only those developing the MIP theory 
-were able to use this technology for solving practical problems.
+However, mostly only those developing the MIP theory 
+were using this technology for solving practical problems 
+initially.
 Deep understanding of the theoretical and computational 
 aspects of MIP used to be required for modeling and solving 
 real-world problems.
@@ -288,8 +288,11 @@ This reality began to change in the 90’s when the body
 of literature on how to model and solve MIP increased.
 Around the same time, the commercial MIP solvers [Xpress](
 https://en.wikipedia.org/wiki/FICO_Xpress
-) and CPLEX began 
-to gain popularity.
+) and 
+[CPLEX](
+https://www.ibm.com/analytics/cplex-optimizer
+)
+began to gain popularity.
 Few years later, in early 2000’s, two of the first open 
 source MIP solvers, [GLPK](
 https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit
@@ -298,7 +301,10 @@ and [COIN-OR CBC](
 https://en.wikipedia.org/wiki/COIN-OR#CBC
 ), 
 were public released. Another big player in the commercial 
-side, Gurobi, was founded in 2008.
+side, 
+[Gurobi](
+https://www.gurobi.com/
+), was founded in 2008.
 
 With that, a much broader community began to adopt MIP to solve 
 challenging problem in various industries.
@@ -317,7 +323,7 @@ the usage of MIP to the Operations Research community.
 
 Another wave of democratization of the MIP technology 
 came with the broad adoption of Python as a programming 
-language for data science.
+language for data science and analytics.
 Many Python interface for optimization packages, 
 such as [Pyomo](
 https://en.wikipedia.org/wiki/Pyomo
@@ -333,7 +339,8 @@ its optimization package easily accessible via [gurobipy](
 https://www.gurobi.com/documentation/9.0/quickstart_mac/py_python_interface.html
 ), 
 the Gurobi-Python interface, along with comprehensive, 
-well-structured documentation. CPLEX also took a similar path.
+well-structured documentation. CPLEX has also taken a 
+similar path.
 
 Now, any data scientist (and other analytics 
 professionals) can much more easily leverage 
@@ -350,36 +357,35 @@ by those outside of the Operations Research community,
 we claim that **the combination of data science and MIP is 
 a powerful one**.
 
-In many applications, the data that feeds the MIP model 
+In many applications, part of the input data to MIP models 
 comes from a data science team.
 Perhaps the most classic example is demand data. Data 
 scientists use forecasting to predict demand and then 
-the output of the forecasting algorithm (point forecast) 
-becomes input of the MIP model.
+the output from the forecasting algorithm (point forecast) 
+becomes input to the MIP model.
 In this example, prediction and optimization are done in 
 disconnected silos. we claim that this disconnection has 
 created a gap between what we have been doing and what 
-we can actually achieve with data analytics.
+we could have been achieving with data analytics.
 
-As an example, there has been case where data scientists 
+As an example, there has been a case where data scientists 
 and operations researchers solved, 
 in close collaboration, an important real-world problem in 
 which they used MIP to discretize and 
 maximize expected revenue over ten thousand probability 
 curves generated by a machine learning algorithm.
 
-So yes, there are big benefits in bringing MIP and data 
-science capabilities closer together.
-And this is not us saying that. Here is a quote from 
-Ed Rothberg, the CEO of Gurobi:<br>
+Here is a quote from 
+Ed Rothberg, the CEO of Gurobi, taken from a two-minutes [video](
+https://www.youtube.com/watch?v=RDOsP-gUWgQ
+):<br>
 >“MIP complements other analytics techniques like machine 
 learning quite nicely, we will see more and more companies 
 building application that combines machine learning and 
 optimization.”
 
-This quote was taken from this two-minutes [video](
-https://www.youtube.com/watch?v=RDOsP-gUWgQ
-).
+In conclusion, there are big benefits in bringing MIP and data 
+science (or machine learning) capabilities closer together.
 
 
 ## Is it hard to learn MIP?
@@ -398,21 +404,17 @@ kind of optimization.
 For example, every time we try to fit a model to a data, 
 we are searching for the parameters of the model that 
 minimize error or maximize likelihood. So, this is an 
-optimization problem even though data scientists don’t 
-typically see this way.
-
-You might wonder, for example, why data scientists do not 
-look at linear regression as an optimization problem?
-The answer for this one is simple: when minimizing sum 
-of square errors, there is a closed form solution for the 
+optimization problem, even though data scientists don’t 
+typically see this way. Why don't they?
+The answer is simple: when minimizing sum 
+of square errors, there is a *closed form solution* for the 
 best fitting parameters.  The formula buries the optimization.
-
 Now, replace the linear model with an exponential model, 
 as we would do to model the spreading of a contagious 
 disease, for example.
-In this case, there is no closed formula, and we may 
-need to use some iterative optimization algorithm such 
-as gradient descent.
+In this case, there is no closed formula and we 
+need to use some explicit optimization approach, like
+a gradient descent algorithm.
 
 Going back to the main question, there are several levels 
 of expertise that one can achieve in optimization.
@@ -433,8 +435,9 @@ This includes being able to:
 Level 3 is the one that requires most practice because 
 there is not a single recipe for MIP modeling.
 Level 4 is the most fun for most people. That’s when 
-you hit the run button and follow the optimization 
-progress by watching the solver log, like this one:
+you hit the run button and follow the progress of
+the optimization solver by watching its log, like this 
+one (notice the MIP Gap going to zero in last column):
 
 <pre>
          Nodes                                         Cuts/  
@@ -457,12 +460,14 @@ progress by watching the solver log, like this one:
 </pre>
 
 At the beginning, you will spend a lot of time around 
-Level 3 and Level 4. Level 6 is where you find Operations 
+Level 3 and Level 4, which is the main focus of the 
+Learning MIP project. Level 6 is where you find Operations 
 Research professionals who hold a Ph.D. degree.
+Level 5 is also super fun, but require some more experience.
 To get to Level 6, you need to deeply understand the 
 theory underling Levels 3-5. We can point directions for 
-those interested on that. But we mostly focus only on 
-the theory that is needed to make you a thoughtful practitioner.
+those interested on that. But first we focus only on 
+the theory that is needed to make you a *thoughtful practitioner*.
 
 
 # Summary
@@ -473,22 +478,36 @@ So far, you have already learned that:
 *	MIP finds application in a variety of domains because 
     of its spectacular representativeness.
 *	MIP is adaptable and flexible to easily address new 
-    business requirements on the go.
+    business requirements on the fly.
 *	We can solve MIP instances with millions of variables 
     thanks to recent theoretical and computational advancements.
 *	MIP technology is now accessible much beyond the 
-    Operations Research community—that’s why you are 
-    here—thanks to commercial and open-source MIP solvers.
+    Operations Research community (thanks to commercial and 
+    open-source MIP solvers), and that’s why you are here.
 *	Most Machine Learning techniques are optimization-based 
     techniques.
 *	This content will lead you to the right level of 
     expertise needed to solve real-world problems without 
     burning your time with unnecessary optimization theory.
 
-## Are you ready?!
-It’s time to see practical examples of how to model 
-and solve optimization problems.
+# Next steps
+We hope you are ready and excited to start your MIP journey!
+Or move to the next level if MIP is not new to you.
+ 
+It’s time to see practical examples and learn how to model 
+and solve real-world optimization problems as a Mip Master!
 We will catch up with the theory as we move along. 
 I’m sure that the whole experience will be much more 
 enjoyable this way, opposed to waging though abstract 
 theory first and only then doing the fun stuff.
+
+## Meet Mr. Mip
+Before you get started, let's introduce you to Mr. Mip,
+our role model for learning and applying the MIP technology.
+Mr. Mip is a consultant who is expert in using mathematical 
+optimization and programming for solving decision-making 
+problems. You will learn by observing Mr. Mip in action
+throughout the use cases.
+To take the most from this experience, you should focus on 
+understanding how Mr. Mip thinks. He’s very systematic, 
+so it will be easy to recognize his thinking pattern.
