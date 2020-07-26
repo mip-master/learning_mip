@@ -1,9 +1,5 @@
 # Introduction
 
-$x_1$
-
-$$\sum_{i=1}^7x_i = 1$$
-
 MIP stands for Mixed-integer Programming. 
 This is an important filed of mathematical optimization 
 and a fantastic technology for modeling and solving 
@@ -57,9 +53,11 @@ order in this list, especially if you are not familiar with
 MIP yet.
 
 1.  **[TicTech](
-    https://github.com/mip-master/learning_mip/tree/master/tictech)** - 
-    Illustrates how to implement a 
+    https://github.com/mip-master/learning_mip/tree/master/tictech
+    )** - Illustrates how to implement a 
     *very simple* optimization model.<br>
+    *Author: Aster Santana, Jul 2020*
+    
     Concepts:
     - The three steps to solve a problem
     - The three components of a formulation
@@ -67,9 +65,11 @@ MIP yet.
     - Calling a MIP solver
 
 2.  **[Ukulele-la♬-la♫](
-    https://github.com/mip-master/learning_mip/tree/master/ukulelelala)** - 
-    A simplified version of a practical
+    https://github.com/mip-master/learning_mip/tree/master/ukulelelala
+    )** - A simplified version of a practical
     fulfillment problem.<br>
+    *Author: Aster Santana, Jul 2020*
+    
     Concepts:
     - Integer decision variables
     - Summation notation
@@ -79,14 +79,20 @@ MIP yet.
     - LP files
     
 3.  **[Paper Tree](
-    https://github.com/mip-master/learning_mip/tree/master/paper_tree)** - 
-    A simplified version of a practical 
+    https://github.com/mip-master/learning_mip/tree/master/paper_tree
+    )** - A simplified version of a practical 
     production planning.<br>
+    *Author: Aster Santana, Jul 2020*
+    
     Concepts:
     - Network flow problem
     - Conservation of flow constraint
     - Optimization data model
 
+Would you like to contribute with an use case too?!
+We provide [templates](
+https://github.com/mip-master/learning_mip/tree/master/templates
+) and will be happy to help you!
 
 # The MIP Technology
 Let's dive a little deeper into the MIP technology.
@@ -232,7 +238,8 @@ of MIP theory and MIP solvers.
 
 First, MIP is not a new technology. Here is quote from the 
 [book](
-https://www.springer.com/gp/book/9783540682745)
+https://www.springer.com/gp/book/9783540682745
+)
 *50 Years of Integer Programming 1958-2008, From the Early 
 Years to the State-of-the-Art*<br>
 >“In 1958, Ralph E. Gomory transformed the field of integer 
@@ -244,7 +251,8 @@ algorithm for integer programming.”
 MIP tractability used to be a concern in the beginning. 
 However, there has been tremendous progress around 
 solving MIP. Here is a quote from a recent [paper](
-http://www.mit.edu/~dbertsim/papers/Machine%20Learning%20under%20a%20Modern%20Optimization%20Lens/Logistic%20Regression-From%20Art%20to%20Science.pdf) 
+http://www.mit.edu/~dbertsim/papers/Machine%20Learning%20under%20a%20Modern%20Optimization%20Lens/Logistic%20Regression-From%20Art%20to%20Science.pdf
+) 
 by Dimitris Bertsimas and Angela King:<br>
 >“In the period 1991–2015, algorithmic advances in 
 Mixed-Integer Linear Optimization (MILO) coupled with 
@@ -255,14 +263,20 @@ The number 450 billion is very impressive, isn’t it?
 And this number continue to grow year after year as 
 can be seen from improvement performance reports by 
 commercial MIP solvers such as 
-[CPLEX](https://www.ibm.com/analytics/cplex-optimizer) and 
-[Gurobi](https://www.gurobi.com/).
+[CPLEX](
+https://www.ibm.com/analytics/cplex-optimizer
+) and 
+[Gurobi](
+https://www.gurobi.com/
+).
 
 For several decades, MIP has been transforming operation 
 across industries, including [airlines crew scheduling](
-https://www.isye.gatech.edu/news/airline-optimization-isye), 
+https://www.isye.gatech.edu/news/airline-optimization-isye
+), 
 [sport scheduling](
-http://www.sports-scheduling.com/in-the-news.html), 
+http://www.sports-scheduling.com/in-the-news.html
+), 
 and the whole field of supply chain. 
 However, initially, only those developing the MIP theory 
 were able to use this technology for solving practical problems.
@@ -273,12 +287,16 @@ real-world problems.
 This reality began to change in the 90’s when the body 
 of literature on how to model and solve MIP increased.
 Around the same time, the commercial MIP solvers [Xpress](
-https://en.wikipedia.org/wiki/FICO_Xpress) and CPLEX began 
+https://en.wikipedia.org/wiki/FICO_Xpress
+) and CPLEX began 
 to gain popularity.
 Few years later, in early 2000’s, two of the first open 
 source MIP solvers, [GLPK](
-https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit) 
-and [COIN-OR CBC](https://en.wikipedia.org/wiki/COIN-OR#CBC), 
+https://en.wikipedia.org/wiki/GNU_Linear_Programming_Kit
+) 
+and [COIN-OR CBC](
+https://en.wikipedia.org/wiki/COIN-OR#CBC
+), 
 were public released. Another big player in the commercial 
 side, Gurobi, was founded in 2008.
 
@@ -286,9 +304,14 @@ With that, a much broader community began to adopt MIP to solve
 challenging problem in various industries.
 However, some specific modeling language, such as 
 [GAMS](
-https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System), 
-[AMPL](https://en.wikipedia.org/wiki/AMPL), or 
-[AIMMS](https://en.wikipedia.org/wiki/AIMMS), would 
+https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System
+), 
+[AMPL](
+https://en.wikipedia.org/wiki/AMPL
+), or 
+[AIMMS](
+https://en.wikipedia.org/wiki/AIMMS
+), would 
 still be required solving MIP. This used to somehow limit 
 the usage of MIP to the Operations Research community.
 
@@ -296,12 +319,19 @@ Another wave of democratization of the MIP technology
 came with the broad adoption of Python as a programming 
 language for data science.
 Many Python interface for optimization packages, 
-such as [Pyomo](https://en.wikipedia.org/wiki/Pyomo), 
-[Mip](https://pypi.org/project/mip/), and 
-[PuLP](https://coin-or.github.io/pulp/), emerged.
+such as [Pyomo](
+https://en.wikipedia.org/wiki/Pyomo
+), 
+[Mip](
+https://pypi.org/project/mip/
+), and 
+[PuLP](
+https://coin-or.github.io/pulp/
+), emerged.
 Gurobi, in particular, has put tremendous effort in making 
 its optimization package easily accessible via [gurobipy](
-https://www.gurobi.com/documentation/9.0/quickstart_mac/py_python_interface.html), 
+https://www.gurobi.com/documentation/9.0/quickstart_mac/py_python_interface.html
+), 
 the Gurobi-Python interface, along with comprehensive, 
 well-structured documentation. CPLEX also took a similar path.
 
@@ -348,7 +378,8 @@ building application that combines machine learning and
 optimization.”
 
 This quote was taken from this two-minutes [video](
-https://www.youtube.com/watch?v=RDOsP-gUWgQ).
+https://www.youtube.com/watch?v=RDOsP-gUWgQ
+).
 
 
 ## Is it hard to learn MIP?

@@ -2,3 +2,4 @@ theme: jekyll-theme-leap-day
 title: Learning MIP
 
 # More configuration options: https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml
+# To use latex: https://katex.org/
