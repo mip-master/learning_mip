@@ -1,6 +1,8 @@
 # Introduction
 
-//(x_1//)
+$x_1$
+
+$$\sum_{i=1}^7x_i = 1$$
 
 MIP stands for Mixed-integer Programming. 
 This is an important filed of mathematical optimization 
