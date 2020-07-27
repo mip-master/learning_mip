@@ -494,12 +494,11 @@ So far, you have already learned that:
 We hope you are ready and excited to start your MIP journey!
 Or move to the next level if MIP is not new to you.
  
-It’s time to see practical examples and learn how to model 
+Now it’s time to see practical examples and learn how to model 
 and solve real-world optimization problems as a Mip Master!
-We will catch up with the theory as we move along. 
-I’m sure that the whole experience will be much more 
-enjoyable this way, opposed to waging though abstract 
-theory first and only then doing the fun stuff.
+We recommend you start from the [TicTech](
+https://github.com/mip-master/learning_mip/tree/master/tictech
+) use case.
 
 ## Meet Mr. Mip
 Before you get started, let's introduce you to Mr. Mip,
@@ -511,3 +510,37 @@ throughout the use cases.
 To take the most from this experience, you should focus on 
 understanding how Mr. Mip thinks. He’s very systematic, 
 so it will be easy to recognize his thinking pattern.
+
+# Philosophy
+
+The goal of Mip Master with the Learning MIP project is
+to democratize the MIP technology so it can be use
+beyond the Operation Research community.
+
+The way MIP had been thought traditionally, is by
+starting with a comprehensive revision of the theory
+underlying the MIP technology. Specifically, people would 
+spend a lot of time learning Linear Algebra, geometry of
+linear inequalities, the simplex algorithms, and so on.
+Only then students would start learning formulation.
+And implementation, the most fun part, tend to be the 
+last component of traditional MIP-related courses.
+
+We take a completely different approach. We focus
+first on the application and introduce the theory 
+along the way as necessary, only after building the 
+motivation for it. In fact, we start
+with formulation and implementation from the first
+use case, because we know that the whole learning 
+experience will be much more meaningful and enjoyable 
+this way.
+
+We believe that this is the right approach, even for
+the Operation Research community, simply because
+this is how human brain works. You see a problem,
+you try to solve it with the tools you have available,
+and if you are not satisfied with the result, you
+go after more sophisticated tools. And by the time
+you recognize that more complex tools are 
+needed, you already have the motivation and clarity 
+it takes to grasp that underling theory.
