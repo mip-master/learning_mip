@@ -14,6 +14,9 @@ industry experience are being combined to develop this material
 aiming to help you to adopt the best practices right from the 
 beginning.
 
+It's our commitment to keeping this material freely available
+for everyone.
+
 One of the primary goal of Mip Master is to make the MIP
 technology accessible beyond the operations research community,
 and especially to the data science community.
