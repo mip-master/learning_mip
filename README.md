@@ -520,13 +520,13 @@ The goal of Mip Master with the Learning MIP project is
 to democratize the MIP technology so it can be use
 beyond the Operation Research community.
 
-The way MIP had been thought traditionally, is by
+Traditionally, MIP had been thought by
 starting with a comprehensive revision of the theory
-underlying the MIP technology. Specifically, people would 
+underlying the MIP technology. Specifically, students would 
 spend a lot of time learning Linear Algebra, geometry of
 linear inequalities, the simplex algorithms, and so on.
 Only then students would start learning formulation.
-And implementation, the most fun part, tend to be the 
+Implementation, the most fun part, tends to be the 
 last component of traditional MIP-related courses.
 
 We take a completely different approach. We focus
