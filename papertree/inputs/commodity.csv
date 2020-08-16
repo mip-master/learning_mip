@@ -1,9 +1,9 @@
 ﻿Commodity ID,Commodity,Demand (cu ft),Market Price ($/cu ft)
-1,Pulpwood,0, -   
-2,Sawtimber,0, -   
-3,Chips,65, 310.00 
-4,Dust,20, 45.00 
-5,Shavings,35, 64.00 
-6,Lumber,110, 150.00 
-7,Paper,15," 2,860.00 "
-8,Bark,0, -   
+1,Pulpwood,0,
+2,Sawtimber,0,
+3,Chips,65,310.00
+4,Dust,20,45.00
+5,Shavings,35,64.00
+6,Lumber,110,150.00
+7,Paper,15,2860.00
+8,Bark,0,
