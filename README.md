@@ -542,7 +542,10 @@ the three proprietary solvers listed below.
 If you are beginning and eligible for an academic license, 
 Gurobi has very friendly and well-structured documentation. 
 If you are not eligible for an academic license, you may 
-want to start with CBC-PuLP.
+want to start with CBC-PuLP. The good news is that the 
+modeling syntax of these solvers are all very similar, 
+meaning that if you learn how to use one solver, then it's 
+easy to switch to another solver.
 
 * [CBC](
 https://github.com/coin-or/Cbc
