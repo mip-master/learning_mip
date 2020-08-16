@@ -514,6 +514,81 @@ To take the most from this experience, you should focus on
 understanding how Mr. Mip thinks. He’s very systematic, 
 so it will be easy to recognize his thinking pattern.
 
+## Setting up a MIP Solver
+You will need a solver to solve MIP models. 
+A MIP solver is basically a professional implementation of a 
+[branch and bound](
+https://en.wikipedia.org/wiki/Branch_and_bound
+) 
+method combined with a 
+[cutting-plane](
+https://en.wikipedia.org/wiki/Cutting-plane_method
+)
+method.
+
+While there are many solvers available for solving MIP, 
+we list only four of the most traditional solvers 
+(follow this [link](
+https://en.wikipedia.org/wiki/List_of_optimization_software
+) 
+for a more comprehensive list of optimization software). 
+All of them are proprietary solvers except for CBC, 
+which is open-source and part of the [COIN-OR](
+https://www.coin-or.org/
+) 
+project. Free academic licenses are available for all 
+the three proprietary solvers listed below.
+
+If you are beginning and eligible for an academic license, 
+Gurobi has very friendly and well-structured documentation. 
+If you are not eligible for an academic license, you may 
+want to start with CBC-PuLP. The good news is that the 
+modeling syntax of these solvers are all very similar, 
+meaning that if you learn how to use one solver, then it's 
+easy to switch to another solver.
+
+* [CBC](
+https://github.com/coin-or/Cbc
+)
+    - Type: Open source
+    - Python interface: [PuLP](
+    https://pypi.org/project/PuLP/
+    ), 
+    [Installation guide](
+    https://coin-or.github.io/pulp/main/installing_pulp_at_home.html#installation
+    )
+* [CPLEX](
+https://www.ibm.com/analytics/cplex-optimizer
+)
+    - Type: Proprietary
+    - Python interface: [DOcplex](
+    https://cdn.rawgit.com/IBMDecisionOptimization/docplex-doc/master/docs/index.html
+    ),
+    [Installation guide](
+    https://cdn.rawgit.com/IBMDecisionOptimization/docplex-doc/master/docs/getting_started_python.html
+    )
+* [Gurobi](
+https://www.gurobi.com/
+)
+    - Type: Proprietary
+    - Python interface: [gurobipy](
+    https://www.gurobi.com/documentation/9.0/quickstart_mac/py_python_interface.html
+    ),
+    [Installation guide](
+    https://www.gurobi.com/documentation/9.0/quickstart_mac/ins_the_anaconda_python_di.html#section:Anaconda
+    )
+* [Xpress](
+https://www.fico.com/en/products/fico-xpress-optimization
+)
+    - Type: Proprietary
+    - Python interface: [xpress](
+    https://pypi.org/project/xpress/
+    ),
+    [Installation guide](
+    https://www.msi-jp.com/xpress/learning/square/01-python-interface.pdf
+    )
+
+
 # Philosophy
 
 The goal of Mip Master with the Learning MIP project is
