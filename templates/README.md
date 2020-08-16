@@ -17,4 +17,9 @@ name will be listed in the home page of the
 project.
 
 Got an idea of a use case but are not sure
-if it's a good one? Let's discuss it!
+if it's a good one? Let's discuss it! 
+You can reach out to 
+[Aster Santana](
+https://www.linkedin.com/in/asteroide-santana/
+) 
+via LinkedIn.
