@@ -17,5 +17,12 @@ or
 - Network flow problem
 - Conservation of flow constraint
 - Optimization data model
+- Reading/writing data to csv files
 
+## Directory guide
+* `docs` - Documentation of the problem, including 
+   problem statement and solution.
+* `inputs` - Contains the input data in csv format.
+* `outputs` - Contains the output data in csv format.
+* `scripts` - Implements the optimization
 
