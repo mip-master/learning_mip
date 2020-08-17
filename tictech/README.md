@@ -2,7 +2,7 @@
 
 This is the directory for the TicTech use case.
 
-It you are new to the Learning MIP project, 
+If you are new to the Learning MIP project, 
 you may want to start from its
 [homepage](
 https://mip-master.github.io/learning_mip/).
@@ -20,3 +20,8 @@ or
 - The three components of a formulation
 - Modeling with binary decision variables
 - Calling a MIP solver
+
+## Directory guide
+* `docs` - Documentation of the problem, including 
+   problem statement and solution.
+* `scripts` - Implements the optimization

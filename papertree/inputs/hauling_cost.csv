@@ -1,11 +1,11 @@
 ﻿Origin ID,Destination ID,Commodity ID,Origin,Destination,Commodity,Hauling Cost ($/cu ft)
-1,2,1,Forest,Pulpwood Mill,Pulpwood, 45.00 
-1,3,2,Forest,Sawmill,Sawtimber, 24.00 
-2,4,3,Pulpwood Mill,Linerboard Mill,Chips, 13.45 
-2,5,3,Pulpwood Mill,Marketplace,Chips, 64.00 
-3,4,4,Sawmill,Linerboard Mill,Dust, 11.80 
-3,4,5,Sawmill,Linerboard Mill,Shavings, 11.80 
-3,5,4,Sawmill,Marketplace,Dust, 75.00 
-3,5,5,Sawmill,Marketplace,Shavings, 75.00 
-3,5,6,Sawmill,Marketplace,Lumber, 62.50 
-4,5,7,Linerboard Mill,Marketplace,Paper, 44.05 
+1,2,1,Forest,Pulpwood Mill,Pulpwood,45
+1,3,2,Forest,Sawmill,Sawtimber,24
+2,4,3,Pulpwood Mill,Linerboard Mill,Chips,13.45
+2,5,3,Pulpwood Mill,Marketplace,Chips,64
+3,4,4,Sawmill,Linerboard Mill,Dust,11.8
+3,4,5,Sawmill,Linerboard Mill,Shavings,11.8
+3,5,4,Sawmill,Marketplace,Dust,75
+3,5,5,Sawmill,Marketplace,Shavings,75
+3,5,6,Sawmill,Marketplace,Lumber,62.5
+4,5,7,Linerboard Mill,Marketplace,Paper,44.05

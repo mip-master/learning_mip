@@ -2,7 +2,7 @@
 This is the home directory of the Ukulele-la♬-la♫
 use case.
 
-It you are new to the Learning MIP project, 
+If you are new to the Learning MIP project, 
 you may want to start from its
 [homepage](
 https://mip-master.github.io/learning_mip/).
@@ -23,3 +23,7 @@ or
 - Complement of a binary variable
 - LP files
 
+## Directory guide
+* `docs` - Documentation of the problem, including 
+   problem statement and solution.
+* `scripts` - Implements the optimization
