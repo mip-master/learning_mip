@@ -1,9 +1,12 @@
 """
 This is the implementation of the Paper Tree use case that reads the input data from csv files.
 
-In the Input Data region, each input csv file is loaded into data frames which are then used to populate the
-parameters dictionaries. Ideally, this data processing would be done in a separate module. The reason why we
-do everything in this module is to avoid confusion for those learning Python.
+In the INPUT DATA region in the beginning of the script, each input csv file is loaded into data frames which are
+then used to populate the parameters dictionaries.
+In the OUTPUT DATA region at the end of the script, the solution from the optimization is processed and saved into
+a csv file.
+Ideally, this data processing would be done in a separate module. The reason why we do everything in this module
+is to avoid confusion for those learning Python.
 
 This version uses Gurobi as a solver.
 
@@ -12,14 +15,16 @@ Created by Aster Santana (Aug 16, 20), MipMaster.org.
 import gurobipy as gp
 import pandas as pd
 
-# region Input Data
-# load data into data frames
+# region INPUT DATA
+# Load data into data frames
 location_df = pd.read_csv('inputs/location.csv')
 location_df = location_df.fillna(0)
 commodity_df = pd.read_csv('inputs/commodity.csv')
 commodity_df = commodity_df.fillna(0)
 hauling_df = pd.read_csv('inputs/hauling_cost.csv')
 output_ratio_df = pd.read_csv('inputs/output_ratio.csv')
+
+# Populate parameters
 # locations
 I = dict([(i, v) for i, v in zip(location_df['Location ID'], location_df['Location'])])
 # commodities
@@ -43,6 +48,7 @@ r = dict([((k1, k2), v) for k1, k2, v in zip(
 x_keys = list(hc.keys())
 # endregion
 
+# region OPTIMIZATION MODEL
 # Define the model
 mdl = gp.Model('PaperTree')
 
@@ -79,5 +85,23 @@ mdl.optimize()
 
 # Retrieve the solution
 print(f'Total profit {mdl.objVal:.2f}')
-for (i, j, k), v in x.items():
-    print(f'From {I[i]:<15} to {I[j]:<15} {v.X:5.2f} {K[k]}')
+x_sol = {(i, j, k): v.X for (i, j, k), v in x.items()}
+# endregion
+
+# region OUTPUT DATA
+# Prepare output data frame
+# convert solution dictionary into a pandas data frame
+solution_df = pd.DataFrame([[i, j, k, round(v.X, 2)] for (i, j, k), v in x.items()],
+                           columns=['Origin ID', 'Destination ID', 'Commodity ID', 'Flow (cu ft)'])
+# merge with hauling_df to get origin, destination, and commodity names and hauling cost
+solution_df = solution_df.merge(hauling_df, on=['Origin ID', 'Destination ID', 'Commodity ID'])
+# compute hauling cost for each origin-destination-commodity combination
+solution_df['Hauling Cost ($)'] = solution_df['Hauling Cost ($/cu ft)'] * solution_df['Flow (cu ft)']
+# keep only selected columns in the desired order
+solution_df = solution_df[['Origin ID', 'Destination ID', 'Commodity ID', 'Origin', 'Destination', 'Commodity',
+                           'Flow (cu ft)', 'Hauling Cost ($)']]
+
+# Report solution
+print(solution_df.to_string())
+solution_df.to_csv('outputs/optimal_flow.csv')
+# endregion
