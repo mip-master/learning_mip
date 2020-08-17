@@ -23,3 +23,7 @@ or
 - Complement of a binary variable
 - LP files
 
+## Directory guide
+* `docs` - Documentation of the problem, including 
+   problem statement and solution.
+* `scripts` - Implements the optimization

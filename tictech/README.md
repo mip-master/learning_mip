@@ -20,3 +20,8 @@ or
 - The three components of a formulation
 - Modeling with binary decision variables
 - Calling a MIP solver
+
+## Directory guide
+* `docs` - Documentation of the problem, including 
+   problem statement and solution.
+* `scripts` - Implements the optimization
