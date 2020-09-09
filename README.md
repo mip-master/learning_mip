@@ -1,9 +1,9 @@
 # Introduction
 
 MIP stands for *Mixed-integer Programming*. 
-It's an important filed of mathematical optimization 
+It's an important field of mathematical optimization 
 and a fantastic technology for modeling and solving 
-decision-making problem in a variety of domains such 
+decision-making problems in a variety of domains such 
 as supply chain, logistics, scheduling,
 electric power generation, and so many more.
 
