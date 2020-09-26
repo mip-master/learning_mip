@@ -82,7 +82,7 @@ MIP yet.
     - LP files
     
 3.  **[Paper Tree](
-    https://github.com/mip-master/learning_mip/tree/master/paper_tree
+    https://github.com/mip-master/learning_mip/tree/master/papertree
     )** - A simplified version of a practical 
     production planning.<br>
     *Author: Aster Santana, Jul 2020*
