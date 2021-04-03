@@ -26,7 +26,7 @@ and all of them are implemented in Python.
 
 After covering this material, you will be able to:
 1.	Identify when a problem can be modeled as a MIP
-2.	Model a variety of problem using MIP
+2.	Model a variety of problems using MIP
 3.	Implement and solve MIP model using a MIP solver in Python
 
 We will cover the basic theory, but the emphasis will be on 
@@ -310,7 +310,7 @@ https://www.gurobi.com/
 ), was founded in 2008.
 
 With that, a much broader community began to adopt MIP to solve 
-challenging problem in various industries.
+challenging problems in various industries.
 However, some specific modeling language, such as 
 [GAMS](
 https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System

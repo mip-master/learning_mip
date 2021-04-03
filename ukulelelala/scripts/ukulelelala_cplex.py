@@ -23,7 +23,7 @@ SL = 50
 PN = 20
 
 # Define the model
-mdl = Model('Ukulele-la-la')
+mdl = Model('Ukulele-la-la', log_output=True)
 
 # Add variables
 x = mdl.var_dict(keys=I, vartype=mdl.binary_vartype, name='x')
