@@ -31,7 +31,7 @@ r = {(1, 3): 0.85, (1, 8): 0.15, (2, 4): 0.1, (2, 5): 0.15, (2, 6): 0.7, (2, 8):
 x_keys = list(hc.keys())
 
 # Define the model
-mdl = Model('PaperTree')
+mdl = Model('PaperTree', log_output=True)
 
 # Add variables
 x = mdl.var_dict(keys=x_keys, vartype=mdl.continuous_vartype, name='x')
