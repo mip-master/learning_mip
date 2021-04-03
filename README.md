@@ -622,3 +622,12 @@ go after more sophisticated tools. And by the time
 you recognize that more complex tools are 
 needed, you already have the motivation and clarity 
 it takes to grasp that underling theory.
+
+# Contact
+If you have any question, comment, would like
+to learn more or contribute, feel free to open a 
+new issue on 
+[GitHub](https://github.com/mip-master/learning_mip/issues),
+or reach out directly to 
+[Aster Santana](https://www.linkedin.com/in/asteroide-santana/) 
+on LinkedIn.
