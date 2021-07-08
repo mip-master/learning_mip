@@ -10,10 +10,10 @@ This version uses CPLEX as a solver.
 Created by Aster Santana (Aug 16, 20), MipMaster.org.
 """
 
-from docplex.mp.model import Model
+import docplex.mp.model as cpl
 
 # Define the model
-mdl = Model('TicTech')
+mdl = cpl.Model('TicTech')
 
 # Add variables
 x = mdl.var_dict(keys=[1, 2, 3], vartype=mdl.binary_vartype, name='x')
