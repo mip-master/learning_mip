@@ -10,10 +10,10 @@ https://mip-master.github.io/learning_mip/).
 For documentation about the Ukulele-la♬-la♫ use case, 
 including the problem statement and formulation, see 
 [ukulelelala.docx](
-../ukulelelala/docs/ukulelelala.docx)
+/docs/ukulelelala.docx)
 or 
 [ukulelelala.pdf](
-../ukulelelala/docs/ukulelelala.pdf).
+/docs/ukulelelala.pdf).
 
 ## Concepts covered
 - Modeling with integer decision variables

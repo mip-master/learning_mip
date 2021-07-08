@@ -8,10 +8,10 @@ at Mip Master, you may want to start from the
 For documentation about the Paper Tree use case, 
 including the problem statement and formulation, see 
 [papertree.docx](
-../papertree/docs/papertree.docx)
+/docs/papertree.docx)
 or 
 [papertree.pdf](
-../papertree/docs/papertree.pdf).
+/docs/papertree.pdf).
 
 ## Concepts covered
 - Network flow problem

@@ -10,10 +10,10 @@ https://mip-master.github.io/learning_mip/).
 For documentation about the TicTech use case, 
 including the problem statement and formulation, see 
 [tictech.docx](
-../tictech/docs/tictech.docx)
+/docs/tictech.docx)
 or 
 [tictech.pdf](
-../tictech/docs/tictech.pdf).
+/docs/tictech.pdf).
 
 ## Concepts covered
 - The three steps to solve a problem
