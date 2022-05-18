@@ -1,3 +1,5 @@
+**OBS: We are migrating all the content of Mip Master to [Mip Wise](https://www.mipwise.com/).**
+
 # Introduction
 
 MIP stands for *Mixed-integer Programming*. 
