@@ -1,3 +1,5 @@
+**OBS: We are migrating all the content of Mip Master to [Mip Wise](https://www.mipwise.com/).**
+
 # Introduction
 
 MIP stands for *Mixed-integer Programming*. 
@@ -82,7 +84,7 @@ MIP yet.
     - LP files
     
 3.  **[Paper Tree](
-    https://github.com/mip-master/learning_mip/tree/master/paper_tree
+    https://github.com/mip-master/learning_mip/tree/master/papertree
     )** - A simplified version of a practical 
     production planning.<br>
     *Author: Aster Santana, Jul 2020*
