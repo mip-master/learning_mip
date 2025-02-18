@@ -631,5 +631,5 @@ to learn more or contribute, feel free to open a
 new issue on 
 [GitHub](https://github.com/mip-master/learning_mip/issues),
 or reach out directly to 
-[Aster Santana](https://www.linkedin.com/in/asteroide-santana/) 
+[Aster Santana](https://www.linkedin.com/in/aster-santana/) 
 on LinkedIn.
